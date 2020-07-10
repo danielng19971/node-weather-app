@@ -8,7 +8,7 @@ form.addEventListener('submit',(e)=>{
 
     const location = search.value
     p.textContent = "Loading"
-    const input = 'http://localhost:3000/weather?address='+location
+    const input = '/weather?address='+location
     fetch(input).then((response)=>{
         
         response.json().then((data)=>{
